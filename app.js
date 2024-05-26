@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 app.use("/api/v1", auth);
 app.use("/api/v2", list);
 
+const PORT = 1000;
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
 });
